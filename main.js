@@ -1,3 +1,7 @@
+//React = __React
+import ReactDOM from 'react-dom';
+import React from 'react'; // necessary to import for compilation
+
 var Note = React.createClass({
     render: function() {
         var style = { backgroundColor: this.props.color };
@@ -9,6 +13,8 @@ var Note = React.createClass({
         );
     }
 });
+
+
 
 var NoteEditor = React.createClass({
     getInitialState: function() {
